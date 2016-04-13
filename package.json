@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "grunt": "^1.0.1",
+    "grunt-concurrent": "^2.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-test": "^0.12.7",
+    "jscs": "^2.11.0",
+    "load-grunt-tasks": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
