@@ -19,7 +19,7 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
     githash: {main: {}},
     dir: {
-      src: 'src',
+      src: 'src'
     },
 
     /* build */
@@ -34,7 +34,7 @@ module.exports = function (grunt) {
     },
 
     jscs: {
-      src: '.**',
+      src: ['src/**', 'test/**'],
       options: {
         config: '.jscsrc',
         verbose: true,
@@ -70,6 +70,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', [
     'jscs',                             // js linter checks
+    'mochaTest',
   ]);
 
   // On watch events, if the changed file is a test file then configure mochaTest to only
@@ -79,6 +80,6 @@ module.exports = function (grunt) {
     grunt.config('mochaTest.test.src', defaultTestSrc);
   });
 
-  grunt.registerTask('default', 'mochaTest');
+  grunt.registerTask('default', 'test');
 
 };
