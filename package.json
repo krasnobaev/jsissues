@@ -6,6 +6,8 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-jscs": "^2.8.0",
     "grunt-mocha-test": "^0.12.7",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^2.2.0",
     "jscs": "^2.11.0",
     "load-grunt-tasks": "^3.5.0",
     "mocha": "^2.4.5"
